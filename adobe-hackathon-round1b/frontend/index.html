@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart PDF Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 style="text-align: center;">Smart PDF Reader</h1>
+
+  <div id="container">
+    <!-- Sidebar for headings -->
+    <div id="sidebar">
+      <h2>Headings</h2>
+      <ul id="toc"></ul>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div id="viewerContainer">
+      <canvas id="pdf-canvas"></canvas>
+      <div id="page-controls">
+        <button id="prev">Previous</button>
+        <span id="page-num"></span>
+        <button id="next">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load PDF.js -->
+  <script src="pdfjs/pdf.js"></script>
+  <!-- Load custom script -->
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>

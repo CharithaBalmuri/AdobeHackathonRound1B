@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pdf-headings:
+    build: .
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    ports:
+      - "5000:5000"
+    container_name: adobe_headings_extractor
